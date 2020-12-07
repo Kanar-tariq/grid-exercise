@@ -89,13 +89,9 @@ display: inline-block;
             
             grid-column: span 2;
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr ;
             grid-gap: 2rem;
-            height: 300px;
-    
-            
-    
-    
+            height: 400px;
             
         }
         .e{
@@ -186,9 +182,9 @@ display: inline-block;
       }
     .cards{
         margin: 0 auto;
-        max-width: 1000px;
+        max-width: 300px;
         display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
         gap: 20px;
         font-family: sans-serif;
     }
@@ -231,3 +227,261 @@ display: inline-block;
 .card__link:hover{
     text-decoration: underline;
 }
+body{
+
+    background-color: #9ec3d8;
+    background-image: linear-gradient(130deg, #aca1cf 0%, #78a0b8 85%, #8fc4c1 100%);
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+   
+    }
+    
+    /* ---------------------------------------------------------------------------*/
+    
+    .header {
+    height: 50px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
+    /* grid-gap: 10px; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    background-color: #38398b;
+    }
+    /* ---------------------------------------------------------------------------*/
+    
+    
+    .header > .logo {
+    display: grid;
+    align-items: center ;
+    justify-items: center;
+    
+    
+    }
+
+    .header > .box > a{
+
+        color: white;
+        text-decoration: none;
+    }
+    /* ---------------------------------------------------------------------------*/
+    
+    .header > .logo > img {
+    height: 40px;
+    }
+    /* ---------------------------------------------------------------------------*/
+    
+    .box {
+    height: 50px;
+    /* background-color: black; */
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-family: arial;
+    
+    }
+    /* ---------------------------------------------------------------------------*/
+
+
+.si{
+
+    display: grid;
+    
+    
+    justify-content: center;
+    height: 700px;
+    padding-top:20px;
+    
+    }
+    /* ---------------------------------------------------------------------------*/
+    .p{
+    background-color: rgb(205, 204, 231);
+    
+    height: 600px;
+    width: 450px;
+    border-radius: 4px;
+    align-items: center;
+    border: 1px solid black;
+    
+    
+    }
+    /* ---------------------------------------------------------------------------*/
+    .text{
+    display: grid;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+    
+    }
+    
+    
+    .si >.p > .text >.h{
+    font-size: 40px;
+    text-align: center;
+    display: grid;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* ---------------------------------------------------------------------------*/
+    
+    .mail{
+    padding: 20px 30px;
+    border-radius: 5px;
+    width: 300px;
+    min-height: 40x;
+    color: #0a0a47;
+    background: #f7f7f9;
+    border: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    text-align: center;
+    size: 90px;
+    
+    }
+    /* ---------------------------------------------------------------------------*/
+    .number{
+    
+    padding: 20px 30px;
+    border-radius: 5px;
+    width: 300px;
+    min-height: 40x;
+    color: #0a0a47;
+    background: #f7f7f9;
+    border: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-family: inherit;
+    text-align: center;
+    size: 90px;
+    
+    
+    }
+
+    .textarea{
+        padding: 20px 30px;
+        border-radius: 5px;
+        width: 300px;
+        min-height: 40x;
+        color: #0a0a47;
+        background: #f7f7f9;
+        border: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 50px;
+        font-family: inherit;
+        text-align: center;
+        size: 90px;
+        
+        
+
+    }
+    /* ---------------------------------------------------------------------------*/
+    .submit{
+    
+    
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 50%;
+    min-height: 20x;
+    margin-left: 80px;
+    background: #f7f7f9;
+    border: 0;
+    font-size: 16px;
+    line-height: 24px;
+    background-color:  #38398b;
+    color: whitesmoke;
+    font-size: 20px;
+    
+    margin-top: 20px;
+    
+    
+    
+    
+    }
+    /* ---------------------------------------------------------------------------*/
+
+.footer {height: 290px;
+    background-color: #38398b;
+    background-image: linear-gradient(160deg, #38398b 0%, #38398b 127%);
+    
+    }
+    
+    .social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    
+    }
+    
+    .social li{
+    margin: 0 10px;}
+    
+    .social a{
+    text-decoration: none;
+    color: darkred;
+    }
+    .social a i{
+    
+    font-size: 2em;
+    
+    }
+    .social a:hover i{
+    
+    color: aqua;
+    }
+    
+    .main-footer1{
+    padding: 50px 0;
+    }
+    .footer-grid1{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 1%;
+    
+    }
+    .footer-header1 h3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:white;
+    text-transform: uppercase;
+    display: grid;
+    justify-content: center;
+    
+    }
+    .footer-header1 p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color:white;
+    display: grid;
+    justify-content: center;
+    }
+    .footer-header1 ul{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    
+    }
+    .footer-header1 ul li{
+    list-style-type:none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    }
+    .footer-header1 ul li a img{
+    width: 60px;
+    }
+    
+    .footer-header1 img{
+    max-width: 70%;
+    }
